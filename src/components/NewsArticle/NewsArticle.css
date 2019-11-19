@@ -36,3 +36,10 @@ a {
     text-decoration: none;
     color: white;
 }
+
+a:hover {
+    font-weight: 900;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .1s ease-in-out;
+}
