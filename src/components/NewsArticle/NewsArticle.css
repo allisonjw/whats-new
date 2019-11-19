@@ -6,11 +6,11 @@ article {
     flex-direction: column;
     justify-content: space-between;
     margin: 7px;
-    width: 48%;
+    width: 43%;
 }
 
 img {
-    width: 100%;
+    width: 97%;
     height: 306px;
     margin: 0;
     padding: 2%;
