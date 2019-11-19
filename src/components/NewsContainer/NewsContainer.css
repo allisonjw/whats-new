@@ -1,0 +1,6 @@
+section {
+    background-color: hotpink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
