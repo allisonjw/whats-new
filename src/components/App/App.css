@@ -5,15 +5,13 @@
 }
 
 .app {
-  display: flex;
-  flex-direction: column;
-  background: #3f51b5;
-  padding: 10%;
+  background-color: #0b1133;
+  padding: 7%;
   text-align: center;
-  /* width: 100%; */
 }
 
 main {
+  background-color: #3f51b5;
   display: flex;
   flex-direction: column;
 }
