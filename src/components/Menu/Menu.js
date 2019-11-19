@@ -1,7 +1,7 @@
 import React from 'react';
 import './Menu.css'
 
-const Menu = (props) => {
+const Menu = props => {
     return (
         <div className="heading">
           <h1>What's New?</h1>  
