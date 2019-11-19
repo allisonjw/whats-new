@@ -35,7 +35,7 @@ handleClick = (e) => {
               type="submit"
               name="submit"
               onClick={e => this.handleClick(e)}
-            >Search
+            >Search Now
             </button>
         </form>
     )
