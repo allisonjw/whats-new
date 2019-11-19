@@ -18,7 +18,7 @@ class App extends Component {
     this.science = science;
     this.technology = technology;
     this.state = {
-      currentNews: this.local
+      currentNews: local
     }
   }
 
