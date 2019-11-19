@@ -4,7 +4,7 @@ import entertainment from '../../data/entertainment';
 import health from '../../data/health';
 import science from '../../data/science';
 import technology from '../../data/technology';
-// import Menu from '../Menu/Menu';
+import Menu from '../Menu/Menu';
 // import SearchForm from '../SearchForm/SearchForm';
 import NewsContainer from '../NewsContainer/NewsContainer';
 import './App.css';
@@ -22,10 +22,14 @@ class App extends Component {
     }
   }
 
+  changeNewsType = (e) => {
+    this.setState({currentNews: this[e.target.name]})
+  }
+
   render () {
     return (
       <div className="app">
-        {/* <Menu /> */}
+        <Menu changeNewsType={this.changeNewsType}/>
         <main>
           {/* <SearchForm /> */}
           <NewsContainer news={this.state.currentNews}/>

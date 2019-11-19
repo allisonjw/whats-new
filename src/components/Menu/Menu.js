@@ -1,16 +1,32 @@
 import React from 'react';
 import './Menu.css'
 
-const Menu = () => {
+const Menu = (props) => {
     return (
+        <div className="heading">
+          <h1>What's New?</h1>  
         <nav>
-            <h1>What's New?</h1>
-            <button className='menu__btn'>Local News</button>
-            <button className='menu__btn'>Technology</button>
-            <button className='menu__btn'>Entertainment</button>
-            <button className='menu__btn'>Science</button>
-            <button className='menu__btn'>Health</button>
+            <button 
+              className='menu__btn' 
+              name='local' 
+              onClick={e => props.changeNewsType(e)}>Local News</button>
+            <button 
+              className='menu__btn' 
+              name='technology' 
+              onClick={e => props.changeNewsType(e)}>Technology</button>
+            <button 
+              className='menu__btn' name='entertainment'
+              onClick={e => props.changeNewsType(e)}>Entertainment</button>
+            <button 
+              className='menu__btn' 
+              name='science'
+              onClick={e => props.changeNewsType(e)}>Science</button>
+            <button 
+              className='menu__btn' 
+              name='health'
+              onClick={e => props.changeNewsType(e)}>Health</button>
         </nav>
+        </div>
     )
 }
 
