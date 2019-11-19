@@ -6,8 +6,12 @@
 
 .app {
   display: flex;
-  background: #141527;
+  background: grey;
   height: 100vh;
   text-align: center;
   width: 100%;
+}
+
+h1 {
+  color: white;
 }
