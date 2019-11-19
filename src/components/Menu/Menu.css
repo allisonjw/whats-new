@@ -1,0 +1,12 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+button {
+    height: 40px;
+    width: 70%;
+    color: indianred;
+    border: none;
+}
