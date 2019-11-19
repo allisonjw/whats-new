@@ -27,7 +27,6 @@ class App extends Component {
       <div className="app">
         {/* <Menu /> */}
         <main>
-          <h1>YOUR CODE GOES HERE!</h1>
           {/* <SearchForm /> */}
           <NewsContainer news={this.state.currentNews}/>
         </main>  
