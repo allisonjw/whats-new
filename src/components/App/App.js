@@ -6,7 +6,7 @@ import science from '../../data/science';
 import technology from '../../data/technology';
 // import Menu from '../Menu/Menu';
 // import SearchForm from '../SearchForm/SearchForm';
-// import NewsContainer from '../NewsContainer/NewsContainer';
+import NewsContainer from '../NewsContainer/NewsContainer';
 import './App.css';
 
 class App extends Component {
@@ -25,10 +25,12 @@ class App extends Component {
   render () {
     return (
       <div className="app">
-        <h1>YOUR CODE GOES HERE!</h1>
-        {/* <Menu />
-        <SearchForm />
-        <NewsContainer /> */}
+        {/* <Menu /> */}
+        <main>
+          <h1>YOUR CODE GOES HERE!</h1>
+          {/* <SearchForm /> */}
+          <NewsContainer news={this.state.currentNews}/>
+        </main>  
       </div>
     );
   }
