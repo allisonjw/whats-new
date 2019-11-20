@@ -13,7 +13,7 @@ handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
 }
 
-handleClick = (e) => {
+handleClick = e => {
     e.preventDefault();
     const searchText = this.state.input.toLowerCase();
     this.props.displayNewsSearch(searchText);
