@@ -22,7 +22,7 @@ class App extends Component {
     }
   }
 
-  changeNewsType = (e) => {
+  changeNewsType = e => {
     this.setState({currentNews: this[e.target.name]})
   }
 
