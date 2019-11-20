@@ -1,6 +1,9 @@
+@import './variables.scss';
+
 form {
   display: flex;
-  justify-content: center
+  justify-content: center;
+  margin: 12px;
 }
 
 %formElementStyles {
@@ -13,10 +16,18 @@ form {
 
 input {
   @extend %formElementStyles;
+  text-align: center;
 }
 
 button {
   @extend %formElementStyles;
   border-radius: 16px;
+    &:hover {
+      background-color: $hover_color;
+      cursor: pointer;
+      font-weight: 900;
+      transform: scale(1.0);
+      transition: all .1s ease-in-out;
+    }
 }
   
