@@ -29,7 +29,6 @@ handleClick = e => {
               name="input"
               value={this.state.input}
               onChange={e => this.handleChange(e)}
-
             />
             <button 
               type="submit"
