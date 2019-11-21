@@ -9,9 +9,21 @@ describe('SearchForm', () => {
   beforeEach(() => {
     wrapper = shallow(<SearchForm displayNewsSearch={mockDisplayNewsSearch} />)
   });
+
+  // console.log(wrapper.debug());
+  // remember to use this later
   
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should update state when handleChange is called', () => {
+    const mockEvent = { target: { name: 'input', value: 'NASA'} };
+    const expected = 'NASA';
+  
+    wrapper.instance().handleChange(mockEvent);
+  
+    expect(wrapper.state('input')).toEqual(expected);
   });
 
 });
