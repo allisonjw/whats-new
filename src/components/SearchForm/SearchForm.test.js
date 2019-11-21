@@ -1,12 +1,14 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import SearchForm from './SearchForm';
+import { GiStarFormation } from 'react-icons/gi';
 
 describe('SearchForm', () => {
   let wrapper;
-  const mockDisplayNewsSearch = jest.fn();
+  let mockDisplayNewsSearch = jest.fn();
 
   beforeEach(() => {
+    mockDisplayNewsSearch = jest.fn();
     wrapper = shallow(<SearchForm displayNewsSearch={mockDisplayNewsSearch} />)
   });
 
@@ -24,6 +26,15 @@ describe('SearchForm', () => {
     wrapper.instance().handleChange(mockEvent);
   
     expect(wrapper.state('input')).toEqual(expected);
+  });
+
+  it('should reset state after form is cleared', () => {
+    const startState = {input: 'NASA'};
+    const expected = { input: '' };
+
+    wrapper.setState(startState);
+    expect(wrapper.instance().resetInput);
+    wrapper.state(expected);
   });
 
   it('should run handleClick when the button is clicked', () => {
