@@ -26,4 +26,14 @@ describe('SearchForm', () => {
     expect(wrapper.state('input')).toEqual(expected);
   });
 
+  it('should run handleClick when the button is clicked', () => {
+    wrapper.instance().handleClick = jest.fn();
+    wrapper.instance().forceUpdate();
+    const mockEvent = { preventDefault: jest.fn() };
+  
+    wrapper.find('button').simulate('click', mockEvent);
+  
+    expect(wrapper.instance().handleClick).toHaveBeenCalledWith(mockEvent);
+  });
+
 });
