@@ -17,7 +17,13 @@ handleClick = e => {
     e.preventDefault();
     const searchText = this.state.input.toLowerCase();
     this.props.displayNewsSearch(searchText);
-    this.setState({ input: "" });
+    this.resetInput()
+}
+
+resetInput = () => {
+  this.setState({ 
+    input: '',
+  })
 }
 
   render() {
@@ -32,7 +38,6 @@ handleClick = e => {
             />
             <button 
               type="submit"
-              name="submit"
               onClick={e => this.handleClick(e)}
             >Search Now
             </button>
