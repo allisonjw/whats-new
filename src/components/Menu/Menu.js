@@ -13,7 +13,7 @@ const Menu = (props) => (
         className="menu__btn"
         name="local"
         type="submit"
-        onClick={e => props.changeNewsType(e)}>
+        onClick={(e) => props.changeNewsType(e)}>
 Local News 
 <MdLocationOn />
         </button>
@@ -21,27 +21,27 @@ Local News
         className="menu__btn" 
         name="technology"
         type="submit" 
-        onClick={e => props.changeNewsType(e)}>Technology 
+        onClick={(e) => props.changeNewsType(e)}>Technology 
         <GiLightBulb />
         </button>
       <button 
         className="menu__btn" 
         name="entertainment"
         type="submit"
-        onClick={e => props.changeNewsType(e)}>Entertainment <MdLocalMovies />
+        onClick={(e) => props.changeNewsType(e)}>Entertainment <MdLocalMovies />
       </button>
       <button 
         className="menu__btn" 
         name="science"
         type="submit"
-        onClick={e => props.changeNewsType(e)}>Science 
+        onClick={(e) => props.changeNewsType(e)}>Science 
         <IoIosRocket />
       </button>
       <button 
         className="menu__btn" 
         name="health"
         type="submit"
-        onClick={e => props.changeNewsType(e)}>Health 
+        onClick={(e) => props.changeNewsType(e)}>Health 
         <GiHeartBeats />
         </button>
     </nav>
