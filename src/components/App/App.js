@@ -23,7 +23,7 @@ class App extends Component {
   }
 
   changeNewsType = (e) => {
-    this.setState({ currentNews: this[e.target.name] })
+    this.setState({ currentNews: this[e.target.name] });
   }
 
   displayNewsSearch = (input) => {
@@ -31,15 +31,15 @@ class App extends Component {
     this.setState({ currentNews: searchResults });
   }
 
-  render () {
+  render() {
     return (
       // eslint-disable-next-line react/jsx-filename-extension
       <div className="app">
-        <Menu changeNewsType={this.changeNewsType}/>
+        <Menu changeNewsType={this.changeNewsType} />
         <main>
-          <SearchForm displayNewsSearch={this.displayNewsSearch}/>
-          <NewsContainer news={this.state.currentNews}/>
-        </main>  
+          <SearchForm displayNewsSearch={this.displayNewsSearch} />
+          <NewsContainer news={this.state.currentNews} />
+        </main>
       </div>
     );
   }
