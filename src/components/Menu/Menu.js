@@ -7,28 +7,30 @@ import { IoIosRocket } from 'react-icons/io';
 
 const Menu = (props) => (
   <div className="heading">
-    <h1>What's New?</h1>  
+    <h1>What's
+      <span>New?</span>
+    </h1>  
     <nav>
       <button 
         className="menu__btn"
         name="local"
         type="submit"
-        onClick={(e) => props.changeNewsType(e)}>
-Local News 
-<MdLocationOn />
-        </button>
+        onClick={(e) => props.changeNewsType(e)}>Local News 
+        <MdLocationOn />
+      </button>
       <button 
         className="menu__btn" 
         name="technology"
         type="submit" 
         onClick={(e) => props.changeNewsType(e)}>Technology 
         <GiLightBulb />
-        </button>
+      </button>
       <button 
         className="menu__btn" 
         name="entertainment"
         type="submit"
-        onClick={(e) => props.changeNewsType(e)}>Entertainment <MdLocalMovies />
+        onClick={(e) => props.changeNewsType(e)}>Entertainment 
+        <MdLocalMovies />
       </button>
       <button 
         className="menu__btn" 
@@ -43,7 +45,7 @@ Local News
         type="submit"
         onClick={(e) => props.changeNewsType(e)}>Health 
         <GiHeartBeats />
-        </button>
+      </button>
     </nav>
   </div>
 );
