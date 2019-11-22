@@ -18,21 +18,22 @@ class App extends Component {
     this.science = science;
     this.technology = technology;
     this.state = {
-      currentNews: local
-    }
+      currentNews: local,
+    };
   }
 
-  changeNewsType = e => {
-    this.setState({currentNews: this[e.target.name]})
+  changeNewsType = (e) => {
+    this.setState({ currentNews: this[e.target.name] })
   }
 
-  displayNewsSearch = input => {
-    const searchResults = this.state.currentNews.filter(article => article.headline.toLowerCase().includes(input));
-    this.setState({ currentNews: searchResults});
+  displayNewsSearch = (input) => {
+    const searchResults = this.state.currentNews.filter((article) => article.headline.toLowerCase().includes(input));
+    this.setState({ currentNews: searchResults });
   }
 
   render () {
     return (
+      // eslint-disable-next-line react/jsx-filename-extension
       <div className="app">
         <Menu changeNewsType={this.changeNewsType}/>
         <main>

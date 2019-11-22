@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import SearchForm from './SearchForm';
-import { GiStarFormation } from 'react-icons/gi';
 
 describe('SearchForm', () => {
   let wrapper;
@@ -22,9 +21,8 @@ describe('SearchForm', () => {
   it('should update state when handleChange is called', () => {
     const mockEvent = { target: { name: 'input', value: 'NASA'} };
     const expected = 'NASA';
-  
+
     wrapper.instance().handleChange(mockEvent);
-  
     expect(wrapper.state('input')).toEqual(expected);
   });
 
@@ -32,18 +30,18 @@ describe('SearchForm', () => {
     const startState = {input: 'NASA'};
     const expected = { input: '' };
 
-    wrapper.setState(startState);
+    wrapper.state(startState);
     expect(wrapper.instance().resetInput);
     wrapper.state(expected);
   });
 
   it('should run handleClick when the button is clicked', () => {
     wrapper.instance().handleClick = jest.fn();
-    wrapper.instance().forceUpdate();
     const mockEvent = { preventDefault: jest.fn() };
   
     wrapper.find('button').simulate('click', mockEvent);
-  
+    wrapper.instance().resetInput = jest.fn();
+   
     expect(wrapper.instance().handleClick).toHaveBeenCalledWith(mockEvent);
   });
 

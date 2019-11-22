@@ -12,22 +12,25 @@ exports[`Menu should match the snapshot 1`] = `
       className="menu__btn"
       name="local"
       onClick={[Function]}
+      type="submit"
     >
-      Local News 
+      Local News
       <MdLocationOn />
     </button>
     <button
       className="menu__btn"
       name="technology"
       onClick={[Function]}
+      type="submit"
     >
-      Technology 
+      Technology
       <GiLightBulb />
     </button>
     <button
       className="menu__btn"
       name="entertainment"
       onClick={[Function]}
+      type="submit"
     >
       Entertainment 
       <MdLocalMovies />
@@ -36,16 +39,18 @@ exports[`Menu should match the snapshot 1`] = `
       className="menu__btn"
       name="science"
       onClick={[Function]}
+      type="submit"
     >
-      Science 
+      Science
       <IoIosRocket />
     </button>
     <button
       className="menu__btn"
       name="health"
       onClick={[Function]}
+      type="submit"
     >
-      Health 
+      Health
       <GiHeartBeats />
     </button>
   </nav>
