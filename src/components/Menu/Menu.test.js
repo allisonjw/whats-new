@@ -3,8 +3,8 @@ import { shallow } from 'enzyme';
 import Menu from './Menu';
 
 describe('Menu', () => {
-   let mockChangeNewsType = jest.fn();
-   let wrapper = shallow(<Menu changeNewsType={mockChangeNewsType} />);
+  let mockChangeNewsType = jest.fn();
+  let wrapper = shallow(<Menu changeNewsType={mockChangeNewsType} />);
 
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
