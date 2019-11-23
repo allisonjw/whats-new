@@ -16,7 +16,7 @@ describe('NewsContainer', () => {
     headline: 'Azar, other health officials press people to get flu shots early',
     description: 'U.S. health officials, including Health and Human Services Secretary Alex Azar, are encouraging Americans to get their flu shots early this year.',
     url: 'https://thehill.com/homenews/news/463354-azar-other-public-health-officials-press-people-to-get-flu-shots-early'
-  }]
+  }];
 
   it('should match the snapshot', () => {
     const wrapper = shallow(<NewsContainer
