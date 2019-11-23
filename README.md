@@ -18,7 +18,7 @@ The focus of this project is on understanding how to pass information through pr
 ![]()
 
 ### Screenshot
-![]()
+![Screen Shot](https://github.com/allisonjw/whats-new/blob/master/screenshots/whats-new.png)
 
 ### Set Up
 
