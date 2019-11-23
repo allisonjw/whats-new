@@ -10,6 +10,7 @@ exports[`SearchForm should match the snapshot 1`] = `
     value=""
   />
   <button
+    className="search__btn"
     onClick={[Function]}
     type="submit"
   >
