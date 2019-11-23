@@ -11,7 +11,9 @@ exports[`NewsArticle should match the snapshot with all data passed in correctly
   <p>
     Classic-rock band The Who has postponed its Denver concert, set for Sunday, Sept. 29, after an illness robbed singer Roger Daltrey of his voice, the band said on Twitter.
   </p>
-  <footer>
+  <footer
+    className="article__footer"
+  >
     <a
       href="https://theknow.denverpost.com/2019/09/27/the-who-postpones-denver-concert/225182/"
     >
