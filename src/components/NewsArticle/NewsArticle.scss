@@ -3,6 +3,7 @@
 article {
     align-items: center;
     background-color: whitesmoke;
+    box-shadow: 0.5px 0.5px, -0.5em 0.8em 1.3em black;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -24,7 +25,7 @@ p {
 }
 
 footer {
-    background-color: grey;
+    background-color: $accent_color;
     height: 35px;
     width: 100%;
 }

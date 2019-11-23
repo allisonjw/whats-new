@@ -8,9 +8,11 @@ form {
 
 %formElementStyles {
   border: 2px solid black;
+  box-shadow: 0.5px 0.5px, -0.5em 0.8em 1.3em black;
   font-size: 1.2em;
   height: 35px;
   margin: 5px;
+  outline: none;
 }
 
 input {
@@ -19,13 +21,13 @@ input {
   width: 23%;
 }
 
-button {
+.search__btn {
   @extend %formElementStyles;
-  background-color: $hover_color;
+  background-color: $accent_color;
   border-radius: 16px;
   width: 16%;
     &:hover {
-      background-color: #ff7600;
+      background-color: $hover-color;
       cursor: pointer;
       font-weight: 900;
       transform: scale(1.1);
