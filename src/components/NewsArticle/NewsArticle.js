@@ -7,7 +7,7 @@ const NewsArticle = ({ image, headline, description, url }) => (
     <img src={image} alt="" />
     <h3>{ headline }</h3>
     <p>{ description }</p>
-    <footer>
+    <footer className="article__footer">
       <a href={url}>
       See full article
       </a>
