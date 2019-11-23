@@ -13,32 +13,35 @@ article {
 }
 
 img {
-    width: 97%;
     height: 306px;
     margin: 0;
     padding: 2%;
+    width: 97%;
 }
 
 p {
-    width: 100%;
     padding: 3%;
+    width: 100%;
 }
 
 .article__footer {
     background-color: $accent_color;
     height: 35px;
     width: 100%;
+      &:hover {
+        background-color: $hover_color;
+      }
 }
 
 a {
     font-size: 1.5em;
     text-decoration: none;
     color: white;
+      &:hover {
+        font-weight: 900;
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: all .1s ease-in-out;
+      }
 }
 
-a:hover {
-    font-weight: 900;
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: all .1s ease-in-out;
-}
