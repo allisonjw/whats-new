@@ -38,6 +38,7 @@ render() {
         onChange={(e) => this.handleChange(e)}
       />
       <button
+        className="search__btn"
         type="submit"
         onClick={(e) => this.handleClick(e)}
       > Search Now
