@@ -40,6 +40,9 @@ class App extends Component {
           <SearchForm displayNewsSearch={this.displayNewsSearch} />
           <NewsContainer news={this.state.currentNews} />
         </main>
+        <footer className="menu__footer">
+          <h3>What's New -- Allison Wagner</h3>
+        </footer>
       </div>
     );
   }

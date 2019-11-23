@@ -74,5 +74,12 @@ exports[`App should match the snapshot 1`] = `
       }
     />
   </main>
+  <footer
+    className="menu__footer"
+  >
+    <h3>
+      What's New -- Allison Wagner
+    </h3>
+  </footer>
 </div>
 `;
