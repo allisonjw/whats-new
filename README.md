@@ -18,7 +18,7 @@ The focus of this project is on understanding how to pass information through pr
 ![Screen Capture](https://github.com/allisonjw/whats-new/blob/master/screenshots/2019-11-22%2018.23.58.gif)
 
 ### Screenshot
-![Screen Shot](https://github.com/allisonjw/whats-new/blob/master/screenshots/whats-new.png)
+![Screen Shot](https://github.com/allisonjw/whats-new/blob/master/screenshots/localhost_3000_.png)
 
 ### Set Up
 
