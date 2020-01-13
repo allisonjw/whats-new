@@ -1,6 +1,6 @@
 # What's New?
 
-# Built by Allison Wagner
+# Built by [Allison Wagner](https://github.com/allisonjw)
 
 What's New is an application designed to display your current news. This application was built with `create-react-app` and is my first app using with the React framework.
 
@@ -13,12 +13,6 @@ The focus of this project is on understanding how to pass information through pr
 - CSS/SCSS
 - Webpack
 - Testing with Jest/Enyzme 
-
-### GIF
-![Screen Capture](https://github.com/allisonjw/whats-new/blob/master/screenshots/2019-11-22%2018.23.58.gif)
-
-### Screenshot
-![Screen Shot](https://github.com/allisonjw/whats-new/blob/master/screenshots/localhost_3000_.png)
 
 ### Set Up
 
@@ -38,3 +32,10 @@ Then navigate to your browser:
 
 ```
 http://localHost:8080/
+```
+
+### GIF
+![Screen Capture](https://github.com/allisonjw/whats-new/blob/master/screenshots/2019-11-22%2018.23.58.gif)
+
+### Screenshot
+![Screen Shot](https://github.com/allisonjw/whats-new/blob/master/screenshots/localhost_3000_.png)
